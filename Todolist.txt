@@ -2,9 +2,9 @@ Todos
     - DONE Create base template
     - DONE Create front page template
     - DONE Create about page template
-    - Create Sign up / Log in templates
-    - Basic list page for projects, todolists, etc
-    - Basic detail page for projects, todolists, etc
+    - DONE Sign up / Log in templates
+    - DONE Basic list page for projects, todolists, etc
+    - DONE Basic detail page for projects, todolists, etc
 
     - Set up the dev environment
     - Create empty project
