@@ -1,4 +1,3 @@
-from re import A
 import uuid
 
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, UserManager
