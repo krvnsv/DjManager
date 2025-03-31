@@ -12,8 +12,8 @@ Todos
     - DONE Create about page
 
     - DONE Custom user model
-    - Sign up
-    - Log in
+    - DONE Sign up
+    - DONE Log in
     
     - Project list page
     - Create project
