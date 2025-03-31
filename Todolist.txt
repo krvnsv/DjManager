@@ -11,7 +11,7 @@ Todos
     - DONE Create core app and front page
     - DONE Create about page
 
-    - Custom user model
+    - DONE Custom user model
     - Sign up
     - Log in
     

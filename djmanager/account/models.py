@@ -11,7 +11,7 @@ class CustomUserManager(UserManager):
         email = self.normalize_email(email)
         user = self.model(email=email, name=name, **extra_fields)
         user.set_password(password)
-        user.save(using=self.d_b)
+        user.save(using=self.db)
 
         return user
     
