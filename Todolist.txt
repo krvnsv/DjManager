@@ -6,10 +6,10 @@ Todos
     - DONE Basic list page for projects, todolists, etc
     - DONE Basic detail page for projects, todolists, etc
 
-    - Set up the dev environment
-    - Create empty project
-    - Create core app and front page
-    - Create about page
+    - DONE Set up the dev environment
+    - DONE Create empty project
+    - DONE Create core app and front page
+    - DONE Create about page
 
     - Custom user model
     - Sign up
