@@ -15,7 +15,7 @@ Todos
     - DONE Sign up
     - DONE Log in
     
-    - Project list page
+    - DONE Project list page
     - Create project
     - Project detail page
     - Edit project

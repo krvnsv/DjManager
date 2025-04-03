@@ -9,3 +9,11 @@ def projects(request):
     return render(request, 'project/projects.html',{
         'projects': projects
     })
+
+
+@login_required
+def add_project(request):
+    if request.method == 'POST':
+        pass
+
+    return render(request, 'project/add.html')
