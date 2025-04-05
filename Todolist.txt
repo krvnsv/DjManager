@@ -18,7 +18,7 @@ Todos
     - DONE Project list page
     - DONE Create project
     - DONE Project detail page
-    - Edit project
+    - DONE Edit project
     - Delete project
 
     - Create todo list
