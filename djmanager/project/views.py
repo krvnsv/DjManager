@@ -56,3 +56,11 @@ def edit(request, pk):
     return render(request, 'project/edit.html', {
         'project': project
     })
+
+
+@login_required
+def delete(request, pk):
+    project = Project.objects.filter(created_by=request.user).get(pk=pk)
+    project.delete()
+    
+    return redirect('/projects/')
