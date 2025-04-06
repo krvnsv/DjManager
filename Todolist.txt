@@ -21,7 +21,7 @@ Todos
     - DONE Edit project
     - DONE Delete project
 
-    - Create todo list
+    - DONE Create todo list
     - Todo list detail page
     - Edit todo list
     - Delete todo list
