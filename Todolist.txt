@@ -23,7 +23,7 @@ Todos
 
     - DONE Create todo list
     - DONE Todo list detail page
-    - Edit todo list
+    - DONE Edit todo list
     - Delete todo list
 
     - Create tasks
