@@ -22,7 +22,7 @@ Todos
     - DONE Delete project
 
     - DONE Create todo list
-    - Todo list detail page
+    - DONE Todo list detail page
     - Edit todo list
     - Delete todo list
 

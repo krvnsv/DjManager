@@ -6,6 +6,17 @@ from project.models import Project
 
 
 @login_required
+def todolist(request, project_id, pk):
+    project = Project.objects.filter(created_by=request.user).get(pk=project_id)
+    todolist = Todolist.objects.filter(project=project).get(pk=pk)
+
+    return render(request, 'todolist/todolist.html', {
+        'project': project,
+        'todolist': todolist
+    })
+
+
+@login_required
 def add(request, project_id):
     project = Project.objects.filter(created_by=request.user).get(pk=project_id)
 
