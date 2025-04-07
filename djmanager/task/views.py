@@ -19,3 +19,18 @@ def add(request, project_id, todolist_id):
     
         return redirect(f'/projects/{project_id}/{todolist_id}/')
     return render(request, 'task/add.html')
+
+
+@login_required
+def detail(request, project_id, todolist_id, pk):
+    project = Project.objects.filter(created_by=request.user).get(pk=project_id)
+    todolist = Todolist.objects.filter(project=project).get(pk=todolist_id)
+    task = Task.objects.filter(project=project).filter(todolist=todolist).get(pk=pk)
+
+    if request.GET.get('is_done', '') == 'yes':
+        task.is_done = True
+        task.save()
+
+    return render(request, 'task/detail.html', {
+        'task': task
+    })

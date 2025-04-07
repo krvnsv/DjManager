@@ -27,7 +27,7 @@ Todos
     - DONE Delete todo list
 
     - DONE Create tasks
-    - Task detail page
+    - DONE Task detail page
     - Edit tasks
     - Delete tasks
 
