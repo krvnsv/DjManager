@@ -13,7 +13,7 @@
         <a href="?is_done=yes" class="py-4 px-8 bg-emerald-600 text-white inline-block">Mark as done</a>
     {% endif %}
     <a href="{% url 'task:edit' task.project_id task.todolist_id task.id %}" class="py-4 px-8 bg-sky-600 text-white inline-block">Edit</a>
-    <a href="#" class="py-4 px-8 bg-amber-600 text-white inline-block">Delete</a>
+    <a href="{% url 'task:delete' task.project_id task.todolist_id task.id %}" class="py-4 px-8 bg-amber-600 text-white inline-block">Delete</a>
 
 
 {% endblock %}

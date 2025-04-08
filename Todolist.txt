@@ -29,7 +29,7 @@ Todos
     - DONE Create tasks
     - DONE Task detail page
     - DONE Edit tasks
-    - Delete tasks
+    - DONE Delete tasks
 
     - File uploads for projects
     - Files list on project page
