@@ -33,7 +33,7 @@ Todos
 
     - DONE File uploads for projects
     - DONE Files list on project page
-    - Delete files
+    - DONE Delete files
 
     - Create notes for projects
     - Notes list on projects

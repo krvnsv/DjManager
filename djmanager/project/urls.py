@@ -11,4 +11,5 @@ urlpatterns = [
     path('<uuid:pk>/edit/', views.edit, name='edit'),
     path('<uuid:pk>/delete/', views.delete, name='delete'),
     path('<uuid:pk>/upload_file/', views.upload_file, name='upload_file'),
+    path('<uuid:project_id>/<uuid:pk>/delete/', views.delete_file, name='delete_file'),
 ]
