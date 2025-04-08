@@ -28,7 +28,7 @@ Todos
 
     - DONE Create tasks
     - DONE Task detail page
-    - Edit tasks
+    - DONE Edit tasks
     - Delete tasks
 
     - File uploads for projects
