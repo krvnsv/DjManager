@@ -31,7 +31,7 @@ Todos
     - DONE Edit tasks
     - DONE Delete tasks
 
-    - File uploads for projects
+    - DONE File uploads for projects
     - Files list on project page
     - Delete files
 
