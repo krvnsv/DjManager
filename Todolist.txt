@@ -35,7 +35,7 @@ Todos
     - DONE Files list on project page
     - DONE Delete files
 
-    - Create notes for projects
+    - DONE Create notes for projects
     - Notes list on projects
     - Detail page for notes
     - Edit note

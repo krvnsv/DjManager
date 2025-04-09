@@ -3,7 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 
 from .forms import ProjectFileForm
-from .models import Project
+from .models import Project, ProjectNote
 
 @login_required
 def projects(request):
@@ -67,9 +67,12 @@ def delete(request, pk):
     return redirect('/projects/')
 
 
+# Files
+
+
 @login_required
-def upload_file(request, pk):
-    project = Project.objects.filter(created_by=request.user).get(pk=pk)
+def upload_file(request, project_id):
+    project = Project.objects.filter(created_by=request.user).get(pk=project_id)
 
     if request.method == 'POST':
         form = ProjectFileForm(request.POST, request.FILES)
@@ -79,7 +82,7 @@ def upload_file(request, pk):
             projectfile.project = project
             projectfile.save()
 
-            return redirect(f'/projects/{pk}/')
+            return redirect(f'/projects/{project_id}/')
     else:
         form = ProjectFileForm
 
@@ -96,3 +99,29 @@ def delete_file(request, project_id, pk):
     projectfile.delete()
 
     return redirect(f'/projects/{project_id}/')
+
+
+# Notes
+
+
+@login_required
+def add_note(request, project_id):
+    project = Project.objects.filter(created_by=request.user).get(pk=project_id)
+
+    if request.method == 'POST':
+        name = request.POST.get('name', '')
+        body = request.POST.get('body', '')
+
+        if name and body:
+            ProjectNote.objects.create(
+                project=project,
+                name=name,
+                body=body,
+            )
+
+            return redirect(f'/projects/{project_id}/')
+
+
+    return render(request, 'project/add_note.html', {
+        'project': project
+    })
