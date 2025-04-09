@@ -55,7 +55,7 @@
     <div class="mt-6 grid grid-cols-4 gap-4">
         {% for note in project.notes.all %}
             <div class="py-6 px-6 bg-slate-200">
-                <a href="#">
+                <a href="{% url 'project:note_detail' project.id note.id %}">
                     <h3 class="mb-4 text-xl">{{ note.name }}</h2>
 
                     <p class="text-sm text-slate-600">

@@ -125,3 +125,14 @@ def add_note(request, project_id):
     return render(request, 'project/add_note.html', {
         'project': project
     })
+
+
+@login_required
+def note_detail(request, project_id, pk):
+    project = Project.objects.filter(created_by=request.user).get(pk=project_id)
+    note = project.notes.get(pk=pk)
+
+    return render(request, 'project/note_detail.html', {
+        'project': project,
+        'note': note
+    })
