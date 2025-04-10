@@ -38,7 +38,7 @@ Todos
     - DONE Create notes for projects
     - DONE Notes list on projects
     - DONE Detail page for notes
-    - Edit note
+    - DONE Edit note
     - Delete note
 
     -Deployment
