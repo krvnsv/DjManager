@@ -39,7 +39,7 @@ Todos
     - DONE Notes list on projects
     - DONE Detail page for notes
     - DONE Edit note
-    - Delete note
+    - DONE Delete note
 
     -Deployment
         - Set up requirements.txt

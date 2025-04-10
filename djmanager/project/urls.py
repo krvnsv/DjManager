@@ -15,4 +15,5 @@ urlpatterns = [
     path('<uuid:project_id>/notes/add/', views.add_note, name='add_note'),
     path('<uuid:project_id>/notes/<uuid:pk>/', views.note_detail, name='note_detail'),
     path('<uuid:project_id>/notes/<uuid:pk>/edit/', views.note_edit, name='note_edit'),
+    path('<uuid:project_id>/notes/<uuid:pk>/delete/', views.note_delete, name='note_delete'),
 ]
